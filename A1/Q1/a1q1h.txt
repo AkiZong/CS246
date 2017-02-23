@@ -1,0 +1,1 @@
+cut -c 7- myfile.txt | sort | uniq -c |sort -gr

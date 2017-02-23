@@ -1,0 +1,19 @@
+#!/bin/bash
+
+y=$(date +%y)
+m=$(date +%m)
+
+if [ "$m" -le 4 ];then
+   t=W
+elif [ "$m" -le 8 ];then
+   t=S
+else
+   t=F
+fi
+
+for name in CS\ [0-9][0-9][0-9].pdf; do
+    new=${name#CS }
+    new=${new%\.pdf}
+    echo $new
+    mv "${name}" "${t}${y}_CS${new}_Notes.pdf"
+done

@@ -1,0 +1,1 @@
+egrep "a" abc.txt | egrep "e" | egrep "i" | egrep "o" | egrep "u"

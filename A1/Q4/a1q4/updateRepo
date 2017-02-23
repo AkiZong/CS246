@@ -1,0 +1,4 @@
+#!/bin/bash
+cd ~/cs246/1155
+git pull
+
